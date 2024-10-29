@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clip Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Download Specific Clips from YouTube</h1>
+    <form id="download-form">
+      <label for="url">YouTube Link:</label>
+      <input type="url" id="url" name="url" required placeholder="https://www.youtube.com/watch?v=example">
+
+      <label for="start">Start Time (HH:MM:SS):</label>
+      <input type="text" id="start" name="start" required placeholder="00:01:30">
+
+      <label for="end">End Time (HH:MM:SS):</label>
+      <input type="text" id="end" name="end" required placeholder="00:02:30">
+
+      <button type="button" onclick="downloadClip()">Download Clip</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
